@@ -3,161 +3,196 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/boovtstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- Bootstrap CSS --> 
+    <script src="https://cdn.jsdelivr.net/npm/boovtstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
     <link href="{{ url_for('static',filename = 'css/bootstrap.min.css')  }}" rel="stylesheet">
 
     <title>Milk Quality Prediction Gallery</title>
 </head>
 
 <body>
+
     <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-        <header style="background-color: lightblue;" class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-        
-              <div class="container">
+        <header style="background-color: lightblue;" class="site-navbar py-4 js-sticky-header site-navbar-target"
+            role="banner">
+
+            <div class="container">
                 <div class="d-flex align-items-center">
-                  <div class="site-logo">
-                    <a href="/" class="d-block">
-                      <img style="border-radius: 25px;" src="{{ url_for('static',filename = 'image/PIET logo with tagline.jpg')  }}" alt="Image" class="img-fluid">
-                    </a>
-                  </div>
-                  <div class="mr-auto">
-                    <nav class="site-navigation position-relative text-right" role="navigation">
-                      <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                        <li class="active">
-                          <a href="/" style="color: blue; margin-right: 15px;"><button type="button"  class="btn btn-outline-primary" style="border-radius: 25px;">HOME</button></a>
-                        </li>
-                        <br>
-                        <li>
-                            <a href="/aboutus" style="color: blue; margin-right: 10px;"><button type="button"  class="btn btn-outline-primary"style="border-radius: 25px;" >ABOUT US</button></a>
-                          
-                        </li>
-                        <br>
-                        <li>
-                            <a href="/major" style="color: blue; margin-right: 10px; text-align: center; "><button type="button"  class="btn btn-outline-primary" style="border-radius: 25px;">MAJOR PROJECTS</button></a>
-                          
-                            
-                        </li>
-                        <br>
-                        <li>
-                            <a href="/minor" style="color: blue; margin-right: 10px; text-align: center; "><button type="button"  class="btn btn-outline-primary" style="border-radius: 25px;">MINOR PROJECTS</button></a>
-                          
-                            
-                        </li>
-      
-                      </ul>                                                                                                                                                                                                                                                                                          </ul>
-                    </nav>
-        
-                  </div>           
+                    <div class="site-logo">
+                        <a href="/" class="d-block">
+                            <img style="border-radius: 25px;"
+                                src="{{ url_for('static',filename = 'image/PIET logo with tagline.jpg')  }}" alt="Image"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="mr-auto">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                <li class="active">
+                                    <a href="/" style="color: blue; margin-right: 15px;"><button type="button"
+                                            class="btn btn-outline-primary"
+                                            style="border-radius: 25px;">HOME</button></a>
+                                </li>
+                                <br>
+                                <li>
+                                    <a href="/aboutus" style="color: blue; margin-right: 10px;"><button type="button"
+                                            class="btn btn-outline-primary" style="border-radius: 25px;">ABOUT
+                                            US</button></a>
+
+                                </li>
+                                <br>
+                                <li>
+                                    <a href="/major"
+                                        style="color: blue; margin-right: 10px; text-align: center; "><button
+                                            type="button" class="btn btn-outline-primary"
+                                            style="border-radius: 25px;">MAJOR PROJECTS</button></a>
+
+
+                                </li>
+                                <br>
+                                <li>
+                                    <a href="/minor"
+                                        style="color: blue; margin-right: 10px; text-align: center; "><button
+                                            type="button" class="btn btn-outline-primary"
+                                            style="border-radius: 25px;">MINOR PROJECTS</button></a>
+
+
+                                </li>
+
+                            </ul>
+                            </ul>
+                        </nav>
+
+                    </div>
                 </div>
-              </div>
-            </header>
-    <hr>
-    <br><br>
-    <center>
-        <h3 style="font-family: fantasy;color: black;font-size: 25px;">Bhamasha Techno Hub</h3>
+            </div>
+        </header>
+        <hr>
+        <br><br>
+        <center>
+            <h3 style="font-family: fantasy;color: black;font-size: 25px;">Bhamasha Techno Hub</h3>
         </center>
-        <img style="width: 290px; height: 320px;position: relative; left: 70px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/Bamashait.jpg')  }}">
-        <img style="width: 520px; height: 270px;position: relative; left: 200px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/bhamashagpr.jpg')  }}">
-        <img style="width: 340px; height: 310px;position: relative; left: 320px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/bamasha1.jpg')  }}">
+        <img style="width: 290px; height: 320px;position: relative; left: 70px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/Bamashait.jpg')  }}">
+        <img style="width: 520px; height: 270px;position: relative; left: 200px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/bhamashagpr.jpg')  }}">
+        <img style="width: 340px; height: 310px;position: relative; left: 320px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/bamasha1.jpg')  }}">
         <br>
         <br>
-    
-        <img style="width: 290px; height: 320px;position: relative; left: 70px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/bhamasharobot.jpg')  }}">
-        <img style="width: 520px; height: 270px;position: relative; left: 200px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/bhamashaseminar.jpg')  }}">
-        <img style="width: 340px; height: 310px;position: relative; left: 320px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/bhamasha3.jpg')  }}">
+
+        <img style="width: 290px; height: 320px;position: relative; left: 70px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/bhamasharobot.jpg')  }}">
+        <img style="width: 520px; height: 270px;position: relative; left: 200px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/bhamashaseminar.jpg')  }}">
+        <img style="width: 340px; height: 310px;position: relative; left: 320px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/bhamasha3.jpg')  }}">
         <br>
         <br>
         <br>
         <br>
         <center>
-        <h3 style="font-family: fantasy;color: black;font-size: 25px;">Auriga IT</h3>
+            <h3 style="font-family: fantasy;color: black;font-size: 25px;">Auriga IT</h3>
         </center>
-        <img style="width: 300px; height: 300px;position: relative; left: 110px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/auriga1.jpg')  }}">
-        <img style="width: 380px; height: 300px;position: relative; left: 220px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/auriga.jpg')  }}">
-        <img style="width: 380px; height: 300px;position: relative; left: 400px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/auriga4.jpg')  }}">
+        <img style="width: 300px; height: 300px;position: relative; left: 110px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/auriga1.jpg')  }}">
+        <img style="width: 380px; height: 300px;position: relative; left: 220px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/auriga.jpg')  }}">
+        <img style="width: 380px; height: 300px;position: relative; left: 400px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/auriga4.jpg')  }}">
         <br>
         <br>
         <br>
         <br>
         <center>
-        <h3 style="font-family: fantasy;color: black;font-size: 25px;">Department</h3>
+            <h3 style="font-family: fantasy;color: black;font-size: 25px;">Department</h3>
         </center>
-        <img style="width: 320px; height: 380px;position: relative; left: 105px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/IMG.jpg')  }}">
-        <img style="width: 450px; height: 320px;position: relative; left: 220px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/department1.jpg')  }}">
-        <img style="width: 390px; height: 330px;position: relative; left: 310px;border-radius: 15px;" src="{{ url_for('static',filename = 'image/depart.jpg')  }}">
+        <img style="width: 320px; height: 380px;position: relative; left: 105px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/IMG.jpg')  }}">
+        <img style="width: 450px; height: 320px;position: relative; left: 220px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/department1.jpg')  }}">
+        <img style="width: 390px; height: 330px;position: relative; left: 310px;border-radius: 15px;"
+            src="{{ url_for('static',filename = 'image/depart.jpg')  }}">
         <br>
-       <br>
-       <br>
-       <br>
-                 
+        <br>
+        <br>
+        <br>
+
         <br>
         <br>
         <br>
         <div class="col-md-12"></div>
 
-      <center><h3 class="section-title" style="text-align: center; color:black;">Sponsored By</h3></center>
-    </div>
-  
-  <br>
-  <br>
-
-<div class="container">
-<div class="row">
-    <div class="col-xs-12 col-md-4">
-        <div class="card mb-3"style="border-radius: 25px;">
-    
-            <div class="card"style="border-radius: 25px;">
-                <img style="max-height: 200px; border-radius: 25px;" src="{{ url_for('static',filename = 'image/AICTEIdeaLabFooterLogo.png')  }}"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-align:center">IDEA LAB</h5>
-                    
-                </div>
-    
-    
-            </div>
+        <center>
+            <h3 class="section-title" style="text-align: center; color:black;">Sponsored By</h3>
+        </center>
         </div>
-    </div>
-    
-    <div class="col-xs-12 col-md-4">
-        <div class="card mb-3"style="border-radius: 25px;">
-    
-            <div class="card"style="border-radius: 25px;">
-                <img style="max-height: 200px; border-radius: 25px;" src="{{ url_for('static',filename = 'image/nbanew.png')  }}"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-align:center">NBA</h5>
-                    
-                </div>
-    
-    
-            </div>
-        </div>
-    </div>
-    
-    <div class="col-xs-10 col-md-3">
-        <div class="card mb-3"style="border-radius: 25px;">
 
-            <div class="card"style="border-radius: 25px;">
-                <img style="max-height: 200px; border-radius: 25px;"
-                    src="{{ url_for('static',filename = 'image/aicte-logo.png')  }}"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"; style="text-align:center; color:black;">AICTE MODROB DEEP LEARNING LAB</h5>
-                    
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="card mb-3" style="border-radius: 25px;">
+
+                        <div class="card" style="border-radius: 25px;">
+                            <img style="max-height: 200px; border-radius: 25px;"
+                                src="{{ url_for('static',filename = 'image/AICTEIdeaLabFooterLogo.png')  }}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align:center">IDEA LAB</h5>
+
+                            </div>
+
+
+                        </div>
+                    </div>
                 </div>
 
-            </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="card mb-3" style="border-radius: 25px;">
 
-        </div>
-    </div>
-    <!-- change later -->
-    <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
-    
+                        <div class="card" style="border-radius: 25px;">
+                            <img style="max-height: 200px; border-radius: 25px;"
+                                src="{{ url_for('static',filename = 'image/nbanew.png')  }}" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align:center">NBA</h5>
 
-</body>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-10 col-md-3">
+                    <div class="card mb-3" style="border-radius: 25px;">
+
+                        <div class="card" style="border-radius: 25px;">
+                            <img style="max-height: 200px; border-radius: 25px;"
+                                src="{{ url_for('static',filename = 'image/aicte-logo.png')  }}" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" ; style="text-align:center; color:black;">AICTE MODROB DEEP
+                                    LEARNING LAB</h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- change later -->
+                <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+
+
+    </body>
+
 </html>

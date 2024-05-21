@@ -1,45 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/boovtstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- Bootstrap CSS --> 
-    <link href="{{ url_for('static',filename = 'css/bootstrap.min.css')  }}" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/boovtstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="{{ url_for('static',filename = 'css/bootstrap.min.css')  }}"
+      rel="stylesheet"
+    />
 
     <title>Milk Quality Prediction Minor Projects</title>
-</head>
+  </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <header  style="background-color: lightblue;" class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <header
+      style="background-color: lightblue"
+      class="site-navbar py-4 js-sticky-header site-navbar-target"
+      role="banner"
+    >
       <div class="container">
         <div class="d-flex align-items-center">
           <div class="site-logo">
             <a href="/" class="d-block">
-              <img style="border-radius: 25px;" src="{{ url_for('static',filename = 'image/PIET logo with tagline.jpg')}}" alt="Image" class="img-fluid">
+              <img
+                style="border-radius: 25px"
+                src="{{ url_for('static',filename = 'image/PIET logo with tagline.jpg')}}"
+                alt="Image"
+                class="img-fluid"
+              />
             </a>
           </div>
           <div class="mr-auto">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+            <nav
+              class="site-navigation position-relative text-right"
+              role="navigation"
+            >
+              <ul
+                class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block"
+              >
                 <li class="active">
-                    <a href="/" style="color: blue; margin-right: 15px;"><button type="button"  class="btn btn-outline-primary" style="border-radius: 25px;">HOME</button></a>
-                  
+                  <a href="/" style="color: blue; margin-right: 15px"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      HOME
+                    </button></a
+                  >
                 </li>
-                <br>
-                 <li>
-                    <a href="/aboutus" style="color: blue; margin-right: 10px;"><button type="button"  class="btn btn-outline-primary"style="border-radius: 25px;" >ABOUT US</button></a>
-                 </li>
-                 <br>
-                 <li>
-                    <a href="/major " style="color: blue; margin-right: 10px; text-align: center; "><button type="button"  class="btn btn-outline-primary" style="border-radius: 25px;">MAJOR PROJECT</button></a>
-                   </li>
-                   <br>
-                 <li>
-                  <a href="/gallery" style="color: blue; margin-right: 10px; text-align: left; "><button type="button"  class="btn btn-outline-primary" style="border-radius: 25px;">GALLERY</button></a>
+                <br />
+                <li>
+                  <a href="/aboutus" style="color: blue; margin-right: 10px"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      ABOUT US
+                    </button></a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a
+                    href="/major "
+                    style="color: blue; margin-right: 10px; text-align: center"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      MAJOR PROJECT
+                    </button></a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a
+                    href="/gallery"
+                    style="color: blue; margin-right: 10px; text-align: left"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      GALLERY
+                    </button></a
+                  >
                 </li>
                 <!-- <br>
                 <li>
@@ -49,242 +107,473 @@
                 <li>
                   <a href="https://www.linkedin.com/in/umartanwar2753/" target="_blank" style="color: blue; margin-right: 10px; text-align: left; "><button type="button"  class="btn btn-outline-primary" >LINKEDIN</button></a>
                 </li> -->
-                
-              </ul>                                                                 
+              </ul>
             </nav>
           </div>
-          
-         
         </div>
       </div>
-
     </header>
-    <hr>
+    <hr />
 
-    <br>
+    <br />
     <center>
-    <h2 class="mb-0" style="color: black;" >MINOR PROJECTS</h2><br>
-</center>
-<br>
-    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url({{url_for('static',filename='images/bg_1.jpg')}})">
-        <div class="container">
-          <div class="row align-items-end">
-            <div class="col-lg-7">
-              <h3 class="mb-0" style="color: blue;" >What is a machine learning model?</h3><br>
-              <p>Machine learning (ML) is a type of artificial intelligence (AI) that allows software applications to become more accurate at predicting outcomes without being explicitly programmed to do so. Machine learning algorithms use historical data as input to predict new output values.</p>
+      <h2 class="mb-0" style="color: black">MINOR PROJECTS</h2>
+      <br />
+    </center>
+    <br />
+    <div
+      class="site-section ftco-subscribe-1 site-blocks-cover pb-4"
+      style="background-image: url({{url_for('static',filename='images/bg_1.jpg')}})"
+    >
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-lg-7">
+            <h3 class="mb-0" style="color: blue">
+              What is a machine learning model?
+            </h3>
+            <br />
+            <p>
+              Machine learning (ML) is a type of artificial intelligence (AI)
+              that allows software applications to become more accurate at
+              predicting outcomes without being explicitly programmed to do so.
+              Machine learning algorithms use historical data as input to
+              predict new output values.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card"style="border-radius: 25px;">
+  
+        <a href="/" class="d-block"><center>
+          <img style="border-radius: 25px;" src="https://www.publichealthnotes.com/wp-content/uploads/2020/03/project-planning-header@2x.png" alt="Image" class="img-fluid">
+        </center>
+        </a>
+      </div> -->
+    <div class="form1" style="border-radius: 25px; background-color: lightblue">
+      <br /><br />
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="card mb-3" style="border-radius: 25px">
+              <div class="card" style="border-radius: 25px">
+                <p class="card-text">
+                  <center><b>Model Deployment QR Code:</b></center>
+                </p>
+                <img
+                  style="max-height: 350px"
+                  src="{{ url_for('static',filename = 'image/house.png')  }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">House Price Prediction</h5>
+                  <p class="card-text">
+                    <li>
+                      Linear Regression is the supervised Machine Learning model
+                      in which the model finds the best fit linear line between
+                      the independent and dependent variable.It performs a
+                      regression task. Regression models a target prediction
+                      value based on independent variables.Linear Regression is
+                      a machine learning algorithm based on supervised learning.
+                      It performs a regression task. Regression models a target
+                      prediction value based on independent variables. It is
+                      mostly used for finding out the relationship between
+                      variables and forecasting.
+                    </li>
+                  </p>
+                  <a
+                    href="https://umartanwarhouse.herokuapp.com/"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      Linear Regression Model for House Price Prediction&#9655;
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="card mb-3" style="border-radius: 25px">
+              <div class="card" style="border-radius: 25px">
+                <p class="card-text">
+                  <center><b>Model Deployment QR Code:</b></center>
+                </p>
+                <img
+                  style="max-height: 350px"
+                  src="{{ url_for('static',filename = 'image/itempurchasepng.png')  }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">Item Purchase Prediction</h5>
+                  <p class="card-text">
+                    <li>
+                      Decision tree algorithm falls under the category of
+                      supervised learning. They can be used to solve both
+                      regression and classification problems.Decision Tree is
+                      the most powerful and popular tool for classification and
+                      prediction. A Decision tree is a flowchart-like tree
+                      structure, where each internal node denotes a test on an
+                      attribute, each branch represents an outcome of the test,
+                      and each leaf node (terminal node) holds a class label.
+                    </li>
+                  </p>
+                  <a
+                    href="https://umartanwar3527-dicissiontreeproject3-app-x7sjyz.streamlitapp.com/"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      Decision Tree Clasification Model for Item Purchase
+                      Prediction&#9655;
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="card mb-3" style="border-radius: 25px">
+              <div class="card" style="border-radius: 25px">
+                <p class="card-text">
+                  <center><b>Model Deployment QR Code:</b></center>
+                </p>
+                <img
+                  style="max-height: 350px"
+                  src="{{ url_for('static',filename = 'image/item1.png')  }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Item Purchase Prediction using SVM and RF
+                  </h5>
+                  <p class="card-text">
+                    <li>
+                      Support Vector Machine(SVM) is a supervised machine
+                      learning algorithm used for both classification and
+                      regression. Though we say regression problems as well its
+                      best suited for classification.
+                    </li>
+                    <li>
+                      The Random forest classifier creates a set of decision
+                      trees from a randomly selected subset of the training set.
+                      It is basically a set of decision trees (DT) from a
+                      randomly selected subset of the training set and then It
+                      collects the votes from different decision trees to decide
+                      the final prediction.
+                    </li>
+                  </p>
+                  <a
+                    href="https://umartanwar3527-svm-and-random-forest-app-udqcs8.streamlitapp.com/"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      SVM and Random Forest Model for Item Purchase
+                      Prediction&#9655;
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="col-xs-12 col-md-4">
+            <div class="card mb-3" style="border-radius: 25px">
+              <div class="card" style="border-radius: 25px">
+                <p class="card-text">
+                  <center><b>Model Deployment QR Code:</b></center>
+                </p>
+                <img
+                  style="max-height: 350px"
+                  src="{{ url_for('static',filename = 'image/titanic.png')  }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">Titanic Survival using KNN</h5>
+
+                  <p class="card-text">
+                    <li>
+                      The K-Nearest Neighbors (KNN) algorithm is a simple,
+                      easy-to-implement supervised machine learning algorithm
+                      that can be used to solve both classification and
+                      regression problems. The KNN algorithm assumes that
+                      similar things exist in close proximity. In other words,
+                      similar things are near to each other.
+                    </li>
+                  </p>
+                  <a href="https://knnproject4.herokuapp.com/" target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      K-Nearest Neighbour Model for Titanic Survival&#9655;
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="card mb-3" style="border-radius: 25px">
+              <div class="card" style="border-radius: 25px">
+                <p class="card-text">
+                  <center><b>Model Deployment QR Code:</b></center>
+                </p>
+                <img
+                  style="max-height: 350px"
+                  src="{{ url_for('static',filename = 'image/sentiment.png')  }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">Sentiment Analysis using NLP</h5>
+                  <p class="card-text">
+                    <li>
+                      Sentiment analysis is the process of classifying whether a
+                      block of text is positive, negative, or, neutral.
+                      Sentiment analysis is contextual mining of words which
+                      indicates the social sentiment of a brand and also helps
+                      the business to determine whether the product which they
+                      are manufacturing is going to make a demand in the market
+                      or not.
+                    </li>
+                  </p>
+                  <a
+                    href="https://umartanwar3527-nlpsentimentanalysisproject5-app-qgk3w3.streamlitapp.com/"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      NLP Model for Sentiment Analysis&#9655;
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="card mb-3" style="border-radius: 25px">
+              <div class="card" style="border-radius: 25px">
+                <p class="card-text">
+                  <center><b>Model Deployment QR Code:</b></center>
+                </p>
+                <img
+                  style="max-height: 350px"
+                  src="{{ url_for('static',filename = 'image/place.png')  }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">Placement Analysis</h5>
+                  <p class="card-text">
+                    <li>
+                      This modal is devloped by using these following modals:
+                      <ol>
+                        <li>Nave Bayse Modal</li>
+                        <li>Decision Tree Clacification Modal</li>
+                        <li>KNN Clasification Modal</li>
+                        <li>Random Forest Modal</li>
+                        <li>Support Vector Machine Modal</li>
+                      </ol>
+                    </li>
+                  </p>
+                  <a
+                    href="https://placementanalysisproj6.herokuapp.com/"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      Placement Analysis&#9655;
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="col-xs-12 col-md-4">
+            <div class="card mb-3" style="border-radius: 25px">
+              <div class="card" style="border-radius: 25px">
+                <p class="card-text">
+                  <center><b>Model Deployment QR Code:</b></center>
+                </p>
+                <img
+                  style="max-height: 350px"
+                  src="{{ url_for('static',filename = 'image/kmeans.png')  }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">K Means Clustering</h5>
+                  <p class="card-text">
+                    <li>
+                      It is basically a type of unsupervised learning method. An
+                      unsupervised learning method is a method in which we draw
+                      references from datasets consisting of input data without
+                      labeled responses. Generally, it is used as a process to
+                      find meaningful structure, explanatory underlying
+                      processes, generative features, and groupings inherent in
+                      a set of examples.
+                    </li>
+                  </p>
+                  <a
+                    href="https://kmeansproject7.herokuapp.com/"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      K Means Clustering Model&#9655;
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="card mb-3" style="border-radius: 25px">
+              <div class="card" style="border-radius: 25px">
+                <p class="card-text">
+                  <center><b>Model Deployment QR Code:</b></center>
+                </p>
+                <img
+                  style="max-height: 350px"
+                  src="{{ url_for('static',filename = 'image/minor.png')  }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">Minor Project(Churn modelling)</h5>
+                  <p class="card-text">
+                    <li>
+                      This modal is devloped by using these following modals:
+                      <ol>
+                        <li>Nave Bayse Modal</li>
+                        <li>Decision Tree Clacification Modal</li>
+                        <li>KNN Clasification Modal</li>
+                        <li>Random Forest Modal</li>
+                        <li>Support Vector Machine Modal</li>
+                      </ol>
+                    </li>
+                  </p>
+                  <a
+                    href="https://umarproject7minor.herokuapp.com/"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style="border-radius: 25px"
+                    >
+                      Minor Project (Churn modelling)&#9655;
+                    </button></a
+                  >
+                  <br /><br />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-    </div>
-    <div class="form1" style="border-radius: 25px;background-color: lightblue;">
-        <br><br>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <div class="card mb-3"style="border-radius: 25px;">
-                        <div class="card"style="border-radius: 25px;">
-                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
-                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/house.png')  }}"
-                        
-                            class="card-img-top" alt="...">
-                        
-                            <div class="card-body">
-                            <h5 class="card-title">House Price Prediction</h5>
-                            <p class="card-text"><li>Linear Regression is the supervised Machine Learning model in which the model finds the best fit linear line between the independent and dependent variable.It performs a regression task. Regression models a target prediction value based on independent variables.Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting.</li></p>
-                            <a href="https://umartanwarhouse.herokuapp.com/" target="_blank" ><button type="button" class="btn btn-outline-primary"style="border-radius: 25px;">Linear Regression Model for House Price Prediction&#9655;</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="card mb-3"style="border-radius: 25px;">
-                    <div class="card"style="border-radius: 25px;">
-                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
-                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/itempurchasepng.png')  }}"
-                        
-                        class="card-img-top" alt="...">
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">Item Purchase Prediction</h5>
-                            <p class="card-text"><li>Decision tree algorithm falls under the category of supervised learning. They can be used to solve both regression and classification problems.Decision Tree is the most powerful and popular tool for classification and prediction. A Decision tree is a flowchart-like tree structure, where each internal node denotes a test on an attribute, each branch represents an outcome of the test, and each leaf node (terminal node) holds a class label.</li></p>
-                            <a href="https://umartanwar3527-dicissiontreeproject3-app-x7sjyz.streamlitapp.com/"><button type="button" class="btn btn-outline-primary"style="border-radius: 25px;">Decision Tree Clasification Model for Item Purchase Prediction&#9655;</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="card mb-3"style="border-radius: 25px;">
-                    <div class="card"style="border-radius: 25px;">
-                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
-                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/item1.png')  }}"
-                        
-                        class="card-img-top" alt="...">
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">Item Purchase Prediction using SVM and RF</h5>
-                            <p class="card-text"><li>Support Vector Machine(SVM) is a supervised machine learning algorithm used for both classification and regression. Though we say regression problems as well its best suited for classification.</li><li>The Random forest classifier creates a set of decision trees from a randomly selected subset of the training set. It is basically a set of decision trees (DT) from a randomly selected subset of the training set and then It collects the votes from different decision trees to decide the final prediction.</li></p>
-                            <a href="https://umartanwar3527-svm-and-random-forest-app-udqcs8.streamlitapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary"style="border-radius: 25px;">SVM and Random Forest Model for Item Purchase Prediction&#9655;</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <hr>
-            <br>
-            <div class="col-xs-12 col-md-4">
-                <div class="card mb-3"style="border-radius: 25px;">
-                    <div class="card"style="border-radius: 25px;">
-                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
-                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/titanic.png')  }}"
-                        
-                        class="card-img-top" alt="...">
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">Titanic Survival using KNN</h5>
-
-                            <p class="card-text"><li>The K-Nearest Neighbors (KNN) algorithm is a simple, easy-to-implement supervised machine learning algorithm that can be used to solve both classification and regression problems. The KNN algorithm assumes that similar things exist in close proximity. In other words, similar things are near to each other.</li></p>
-                            <a href="https://knnproject4.herokuapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary"style="border-radius: 25px;">K-Nearest Neighbour Model for Titanic Survival&#9655;</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="card mb-3"style="border-radius: 25px;">
-                    <div class="card"style="border-radius: 25px;">
-                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
-                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/sentiment.png')  }}"
-                        
-                        class="card-img-top" alt="...">
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">Sentiment Analysis using NLP</h5>
-                            <p class="card-text"><li>Sentiment analysis is the process of classifying whether a block of text is positive, negative, or, neutral. Sentiment analysis is contextual mining of words which indicates the social sentiment of a brand and also helps the business to determine whether the product which they are manufacturing is going to make a demand in the market or not.</li></p>
-                            <a href="https://umartanwar3527-nlpsentimentanalysisproject5-app-qgk3w3.streamlitapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary"style="border-radius: 25px;">NLP Model for Sentiment Analysis&#9655;</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="card mb-3"style="border-radius: 25px;">
-                    <div class="card"style="border-radius: 25px;">
-                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
-                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/place.png')  }}"
-                        
-                        class="card-img-top" alt="...">
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">Placement Analysis</h5>
-                            <p class="card-text"><li>This modal is devloped by using these following modals:
-                                <ol><li>Nave Bayse Modal</li><li>Decision Tree Clacification Modal</li><li>KNN Clasification Modal</li><li>Random Forest Modal</li><li>Support Vector Machine Modal</li></ol>
-                            </li></p>
-                            <a href="https://placementanalysisproj6.herokuapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary"style="border-radius: 25px;">Placement Analysis&#9655;</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <hr>
-            <br>
-            <div class="col-xs-12 col-md-4">
-                <div class="card mb-3"style="border-radius: 25px;">
-                    <div class="card"style="border-radius: 25px;">
-                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
-                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/kmeans.png')  }}"
-                        
-                        class="card-img-top" alt="...">
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">K Means Clustering</h5>
-                            <p class="card-text"><li>It is basically a type of unsupervised learning method. An unsupervised learning method is a method in which we draw references from datasets consisting of input data without labeled responses. Generally, it is used as a process to find meaningful structure, explanatory underlying processes, generative features, and groupings inherent in a set of examples.</li> </p>
-                            <a href="https://kmeansproject7.herokuapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary"style="border-radius: 25px;">K Means Clustering Model&#9655;</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="card mb-3"style="border-radius: 25px;">
-                    <div class="card"style="border-radius: 25px;">
-                        <p class="card-text"><center><b>Model Deployment QR Code:</b></center></p>
-                        <img style="max-height: 350px;" src="{{ url_for('static',filename = 'image/minor.png')  }}"
-                        
-                        class="card-img-top" alt="...">
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">Minor Project(Churn modelling)</h5>
-                            <p class="card-text"><li>This modal is devloped by using these following modals:
-                                <ol><li>Nave Bayse Modal</li><li>Decision Tree Clacification Modal</li><li>KNN Clasification Modal</li><li>Random Forest Modal</li><li>Support Vector Machine Modal</li></ol>
-                            </li></p>
-                            <a href="https://umarproject7minor.herokuapp.com/"target="_blank"><button type="button" class="btn btn-outline-primary"style="border-radius: 25px;">Minor Project (Churn modelling)&#9655;</button></a>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br><br>
-        </div>
+        <br /><br /><br />
+      </div>
     </div>
     <!-- <hr> -->
-    <br><br><br>
+    <br /><br /><br />
     <div class="col-md-12">
-        <center><h3 class="section-title" style="text-align: center; color:black;">Sponsored By</h3></center>
+      <center>
+        <h3 class="section-title" style="text-align: center; color: black">
+          Sponsored By
+        </h3>
+      </center>
     </div>
-    <br>
-    <br>
+    <br />
+    <br />
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <div class="card mb-3"style="border-radius: 25px;">
-                    
-                    <div class="card"style="border-radius: 25px;">
-                        <img style="max-height: 200px; border-radius: 25px;" src="{{ url_for('static',filename = 'image/AICTEIdeaLabFooterLogo.png')  }}"
-                        class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="text-align:center">IDEA LAB</h5>
-                            
-                        </div>
-                        
-                        
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="card mb-3" style="border-radius: 25px">
+            <div class="card" style="border-radius: 25px">
+              <img
+                style="max-height: 200px; border-radius: 25px"
+                src="{{ url_for('static',filename = 'image/AICTEIdeaLabFooterLogo.png')  }}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center">IDEA LAB</h5>
+              </div>
             </div>
-            
-            <div class="col-xs-12 col-md-4">
-                <div class="card mb-3"style="border-radius: 25px;">
-                    
-                    <div class="card"style="border-radius: 25px;">
-                        <img style="max-height: 200px; border-radius: 25px;" src="{{ url_for('static',filename = 'image/nbanew.png')  }}"
-                        class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="text-align:center">NBA</h5>
-                            
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-xs-10 col-md-3">
-                <div class="card mb-3"style="border-radius: 25px;">
-
-                    <div class="card"style="border-radius: 25px;">
-                        <img style="max-height: 200px; border-radius: 25px;"
-                            src="{{ url_for('static',filename = 'image/aicte-logo.png')  }}"
-                            class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title"; style="text-align:center; color:black;">AICTE MODROB DEEP LEARNING LAB</h5>
-                            
-                        </div>
-
-                    </div>
-                    
-                </div>
-            </div>
-            <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
-            <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+          </div>
         </div>
-    </div>    
-</body>
+
+        <div class="col-xs-12 col-md-4">
+          <div class="card mb-3" style="border-radius: 25px">
+            <div class="card" style="border-radius: 25px">
+              <img
+                style="max-height: 200px; border-radius: 25px"
+                src="{{ url_for('static',filename = 'image/nbanew.png')  }}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center">NBA</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-10 col-md-3">
+          <div class="card mb-3" style="border-radius: 25px">
+            <div class="card" style="border-radius: 25px">
+              <img
+                style="max-height: 200px; border-radius: 25px"
+                src="{{ url_for('static',filename = 'image/aicte-logo.png')  }}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  ;
+                  style="text-align: center; color: black"
+                >
+                  AICTE MODROB DEEP LEARNING LAB
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+        <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+      </div>
+    </div>
+  </body>
 </html>
-        

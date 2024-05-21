@@ -16,8 +16,7 @@ model_NB=pickle.load(open('Major_NB.pkl', 'rb'))
 
 @app.route('/')
 def home():
-  
-    return render_template("index.html")
+  return render_template("index.html")
 #------------------------------About us-------------------------------------------
 @app.route('/aboutus')
 def aboutus():
